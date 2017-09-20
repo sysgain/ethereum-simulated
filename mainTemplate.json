@@ -12,6 +12,7 @@
         },
         "authType": {
             "type": "string",
+            "defaultValue": "password",
             "allowedValues": [
                 "password",
                 "sshPublicKey"
@@ -71,7 +72,7 @@
         },
         "numMiningNodesPerMember": {
             "type": "int",
-            "defaultValue": 2,
+            "defaultValue": 1,
             "metadata": {
                 "description": "Number of mining nodes to create for each consortium member"
             },
@@ -97,6 +98,7 @@
         },
         "numTXNodes": {
             "type": "int",
+            "defaultValue": 1,
             "metadata": {
                 "description": "Number of load balanced transaction nodes"
             },
@@ -112,7 +114,6 @@
         },
         "txStorageAccountType": {
             "type": "string",
-            "defaultValue": "",
             "allowedValues": [
                 "Standard_LRS",
                 "Premium_LRS"
